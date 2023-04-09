@@ -556,6 +556,10 @@ video {
   z-index: -10;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -630,6 +634,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-5 {
@@ -801,6 +809,17 @@ form div input:valid + label span {
   color: rgba(0, 0, 0, 0.6);
 }
 
+/*---------------- Effet sur tous les button de la page --------------*/
+
+button{
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:active{
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
 /*---------------------- Fleche ----------------------*/
 
 .fleche svg{
@@ -808,12 +827,15 @@ form div input:valid + label span {
   stroke-dashoffset: 430;
   height: 50px;
   width: 50px;
+  transition: all 0.5s cubic-bezier(0, -0.5, 0);
 }
 
-.fleche2 svg{
-  stroke-dasharray: 250;
-  stroke-dashoffset: 430;
+.fleche div:last-child svg{
   transform: rotate(180deg);
+}
+
+.fleche svg:active{
+  stroke-dasharray: 0;
 }
 
 @media (min-width: 640px) {

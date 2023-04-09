@@ -16,3 +16,16 @@ form div input:valid + label span {
   transform: translateY(-20px);
   color: rgba(0, 0, 0, 0.6);
 }
+
+/*---------------------- Fleche ----------------------*/
+.fleche svg{
+  stroke-dasharray: 250;
+  stroke-dashoffset: 430;
+  height: 50px;
+  width: 50px;
+}
+.fleche2 svg{
+  stroke-dasharray: 250;
+  stroke-dashoffset: 430;
+  transform: rotate(180deg);
+}

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*----------------- Animation des label ------------------------*/
+form div label span{
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(0.5, -0.8, 0.3, 0.7);
+}
+form div input:focus,
+form div input:valid {
+    border-color: rgba(0, 0, 0, 0.6);
+}
+form div input:focus + label span,
+form div input:valid + label span {
+  transform: translateY(-20px);
+  color: rgba(0, 0, 0, 0.6);
+}

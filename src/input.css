@@ -38,3 +38,9 @@ button:active{
 .fleche svg:active{
   stroke-dasharray: 0;
 }
+.card{
+  @apply  h-full w-full hidden transition-all duration-500;
+}
+.card.active{
+  display: block;
+}

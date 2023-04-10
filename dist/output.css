@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Lexend Deca;
+  font-family: 'Lexend Deca', sans serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -729,7 +729,7 @@ video {
 }
 
 .font-sans {
-  font-family: Lexend Deca;
+  font-family: 'Lexend Deca', sans serif;
 }
 
 .text-2xl {
@@ -849,6 +849,20 @@ button:active{
 
 .card.active{
   display: block;
+}
+
+/*--------------------- Blockquote ----------------------*/
+
+blockquote::before{
+  content: '\201C';
+  position: absolute;
+  top: -1rem;
+  left: 0px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .before\:absolute::before {

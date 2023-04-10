@@ -44,3 +44,8 @@ button:active{
 .card.active{
   display: block;
 }
+/*--------------------- Blockquote ----------------------*/
+blockquote::before{
+  content: '\201C';
+  @apply absolute -top-4 left-0 font-semibold text-4xl text-white;
+}

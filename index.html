@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de login realise avec tailwind et designer par le studio Untitle UI">
+    <meta name="author" content="MbiamouRichy">
     <title>Untitle Ui | Login</title>
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="shortcut icon" href="favicon.PNG" type="image/x-icon">
@@ -13,7 +15,7 @@
 <body class="font-sans grid grid-cols-5 overflow-hidden h-screen">
     <div class="flex flex-col justify-center md:p-4 lg:p-14 col-span-5 md:col-span-2 relative p-10">
         <div class="flex flex-row items-center absolute top-10 left-5 lg:static">
-            <img  src="./image/logo.PNG" alt="logo">
+            <img src="./image/logo.PNG" alt="logo">
             <h1 class="text-3xl font-bold">Untitle UI</h1>
         </div>
         <div class="flex flex-col justify-center pt-14">
@@ -21,28 +23,27 @@
             <p class="font-semibold sm:text-xl mb-3">Let's get started your 30 days trial.</p>
             <form class="flex flex-col justify-center mt-5" action="#">
                 <div class="relative my-5 w-full">
-                    <input required maxlength="30"
+                    <input id="name" required maxlength="30"
                         class="w-full h-10 outline-none border-black font-semibold sm:text-xl border-b-2 bg-none"
                         type="text">
-                    <label class="absolute bg-none font-semibold sm:text-xl -top-1 left-0">Name</label>
+                    <label for="name" class="absolute bg-none font-semibold sm:text-xl -top-1 left-0">Name</label>
                 </div>
 
                 <div class="relative my-5 w-full">
-                    <input required maxlength="30"
+                    <input id="email" required maxlength="30"
                         class="w-full h-10 outline-none border-black font-semibold sm:text-xl border-b-2 bg-none"
                         type="text">
-                    <label class="absolute bg-none font-semibold sm:text-xl -top-1 left-0">Email</label>
+                    <label for="email" class="absolute bg-none font-semibold sm:text-xl -top-1 left-0">Email</label>
                 </div>
 
                 <div class="relative my-5 w-full">
-                    <input required maxlength="30"
+                    <input id="password" required maxlength="30"
                         class="w-full h-10 outline-none border-black font-semibold  border-b-2 bg-none sm:text-xl"
                         type="text">
-                    <label class="absolute bg-none font-semibold -top-1 left-0 md:text-xl">Password</label>
+                    <label for="password" class="absolute bg-none font-semibold -top-1 left-0 md:text-xl">Password</label>
                 </div>
 
                 <button class="rounded-lg mt-5 bg-black py-3 text-white sm:text-xl shadow-sm shadow-black">Create account</button>
-
 
                 <button
                     class="flex flex-row items-center justify-center  rounded-lg mt-5 bg-none border-black border py-3 text-black font-semibold sm:text-xl shadow-sm shadow-black">
@@ -65,15 +66,21 @@
                     <span>Sign up with Twitter</span>
                 </button>
 
-                <p class="text-center md:text-xl text-slate-800 mt-10">Already have an accound?<a class="font-semibold"
+                <p class="text-center md:text-xl text-slate-800 mt-10">Already have an accound?<a class="font-semibold border-b-2 border-black"
                         href="#">Login</a></p>
 
             </form>
         </div>
     </div>
+
+    <!--------------- Partie avec les images ------------------->
+
     <div class="hidden  md:block lg:block  md:col-span-3">
         <div class="h-full w-full relative before:h-full before:w-full before:bg-black before:opacity-30 before:absolute overflow-hidden">
+            <!----Logo----->
             <img class="absolute left-10 top-10 " src="image/logo-white.PNG" alt="Grande image du logo">
+
+            <!--------Boutton pour le slider------->
             <div class="flex flex-row items-center justify-center gap-5 absolute bottom-3 right-10">
                 <div class="fleche z-10 flex flex-row gap-5 items-center bg-transparent p-10 rounded-full">
                     <div id="btn_left" class="cursor-pointer bg-none">
@@ -94,7 +101,8 @@
                     </div>
                 </div>
             </div>
-            <div id="slide_container" class="h-full w-full">
+            <!--------- Slider------------->
+            <div class="h-full w-full">
                 <div class="card active">
                     <div class="absolute left-10 bottom-10 ">
                         <h2 class="text-white font-semibold text-xl my-4">

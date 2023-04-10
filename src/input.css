@@ -30,7 +30,7 @@ button:active{
   stroke-dashoffset: 430;
   height: 50px;
   width: 50px;
-  transition: all 0.5s cubic-bezier(0, -0.5, 0);
+  transition: stroke-dasharray 0.5s cubic-bezier(0, -0.5, 0);
 }
 .fleche div:last-child svg{
   transform: rotate(180deg);
@@ -39,7 +39,7 @@ button:active{
   stroke-dasharray: 0;
 }
 .card{
-  @apply  h-full w-full hidden transition-all duration-500;
+  @apply  h-full w-full hidden transition-all duration-700;
 }
 .card.active{
   display: block;

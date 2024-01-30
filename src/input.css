@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /*----------------- Animation des label ------------------------*/
-form div label span{
-    display: inline-block;
-    transition: all 0.5s cubic-bezier(0.5, -0.8, 0.3, 0.7);
+form div label span {
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(0.5, -0.8, 0.3, 0.7);
 }
 form div input:focus,
 form div input:valid {
-    border-color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(0, 0, 0, 0.6);
 }
 form div input:focus + label span,
 form div input:valid + label span {
@@ -17,35 +19,35 @@ form div input:valid + label span {
   color: rgba(0, 0, 0, 0.6);
 }
 /*---------------- Effet sur tous les button de la page --------------*/
-button{
+button {
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-button:active{
+button:active {
   transform: scale(0.9);
   opacity: 0.8;
 }
 /*---------------------- Fleche ----------------------*/
-.fleche svg{
+.fleche svg {
   stroke-dasharray: 250;
   stroke-dashoffset: 430;
   height: 50px;
   width: 50px;
   transition: stroke-dasharray 0.5s cubic-bezier(0, -0.5, 0);
 }
-.fleche div:last-child svg{
+.fleche div:last-child svg {
   transform: rotate(180deg);
 }
-.fleche svg:active{
+.fleche svg:active {
   stroke-dasharray: 0;
 }
-.card{
-  @apply  h-full w-full hidden transition-all duration-700;
+.card {
+  @apply h-full w-full hidden transition-all duration-700;
 }
-.card.active{
+.card.active {
   display: block;
 }
 /*--------------------- Blockquote ----------------------*/
-blockquote::before{
-  content: '\201C';
+blockquote::before {
+  content: "\201C";
   @apply absolute -top-4 left-0 font-semibold text-4xl text-white;
 }

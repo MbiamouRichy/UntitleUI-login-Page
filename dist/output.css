@@ -558,6 +558,10 @@ video {
   top: 2.5rem;
 }
 
+.top-\[20px\]{
+  top: 20px;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -646,6 +650,10 @@ video {
   min-height: 100%;
 }
 
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-1\/5{
   width: 20%;
 }
@@ -684,6 +692,10 @@ video {
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-around{
+  justify-content: space-around;
 }
 
 .gap-5{
@@ -957,11 +969,25 @@ blockquote::before {
     margin-top: 2.5rem;
   }
 
+  .lg\:mt-7{
+    margin-top: 1.75rem;
+  }
+
+  .lg\:mt-14{
+    margin-top: 3.5rem;
+  }
+
   .lg\:block{
     display: block;
   }
 
   .lg\:p-14{
     padding: 3.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:mt-0{
+    margin-top: 0px;
   }
 }

@@ -1,148 +1,242 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page de login coder avec tailwind par Mbiamou Richy et designer par le studio Untitle UI">
-    <meta name="author" content="MbiamouRichy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page de login coder avec tailwind par Mbiamou Richy et designer par le studio Untitle UI"
+    />
+    <meta name="author" content="MbiamouRichy" />
     <title>Untitle Ui | Login</title>
-    <link rel="stylesheet" href="./dist/output.css">
-    <link rel="shortcut icon" href="favicon.PNG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="shortcut icon" href="favicon.PNG" type="image/x-icon" />
+  </head>
 
-<body class="font-sans h-screen grid grid-cols-5 overflow-x-hidden">
-    <div class="flex max-h-screen h-screen flex-col justify-center md:p-4 lg:p-14 col-span-5 md:col-span-2 relative p-10">
-        <div class="flex flex-row items-center absolute top-10 left-5">
-            <img src="./image/logo.PNG" alt="logo">
-            <h1 class="text-3xl font-bold">Untitle UI</h1>
+  <body class="font-sans h-screen grid grid-cols-5 overflow-x-hidden">
+    <div
+      class="flex min-h-screen h-screen flex-col justify-center md:p-4 lg:p-14 col-span-5 md:col-span-2 relative p-10"
+    >
+      <div class="flex flex-col justify-center pt-14">
+        <div class="flex flex-row items-center lg:mt-14 xl:mt-0">
+          <img src="./image/logo.PNG" alt="logo" />
+          <h1 class="text-3xl font-bold">Untitle UI</h1>
         </div>
-        <div class="flex flex-col justify-center pt-14">
-            <h2 class="font-bold text-2xl sm:text-3xl my-3">Create an account</h2>
-            <p class="font-semibold sm:text-xl mb-3">Let's get started your 30 days trial.</p>
-            <form class="flex flex-col justify-center mt-5" action="#">
-                <div class="relative my-5 w-full">
-                    <input id="name" required maxlength="30"
-                        class="w-full h-10 outline-none border-black font-semibold sm:text-xl border-b-2 bg-none"
-                        type="text">
-                    <label for="name" class="absolute bg-none font-semibold sm:text-xl -top-1 left-0">Name</label>
-                </div>
+        <h2 class="font-bold text-2xl sm:text-3xl my-3">Create an account</h2>
+        <p class="font-semibold sm:text-xl mb-3">
+          Let's get started your 30 days trial.
+        </p>
+        <form class="flex flex-col justify-center mt-5" action="#">
+          <div class="relative my-5 w-full">
+            <input
+              id="name"
+              required
+              maxlength="30"
+              class="w-full h-10 outline-none border-black font-semibold sm:text-xl border-b-2 bg-none"
+              type="text"
+            />
+            <label
+              for="name"
+              class="absolute bg-none font-semibold sm:text-xl -top-1 left-0"
+              >Name</label
+            >
+          </div>
 
-                <div class="relative my-5 w-full">
-                    <input id="email" required maxlength="30"
-                        class="w-full h-10 outline-none border-black font-semibold sm:text-xl border-b-2 bg-none"
-                        type="text">
-                    <label for="email" class="absolute bg-none font-semibold sm:text-xl -top-1 left-0">Email</label>
-                </div>
+          <div class="relative my-5 w-full">
+            <input
+              id="email"
+              required
+              maxlength="30"
+              class="w-full h-10 outline-none border-black font-semibold sm:text-xl border-b-2 bg-none"
+              type="text"
+            />
+            <label
+              for="email"
+              class="absolute bg-none font-semibold sm:text-xl -top-1 left-0"
+              >Email</label
+            >
+          </div>
 
-                <div class="relative my-5 w-full">
-                    <input id="password" required maxlength="30"
-                        class="w-full h-10 outline-none border-black font-semibold  border-b-2 bg-none sm:text-xl"
-                        type="text">
-                    <label for="password" class="absolute bg-none font-semibold -top-1 left-0 md:text-xl">Password</label>
-                </div>
+          <div class="relative my-5 w-full">
+            <input
+              id="password"
+              required
+              maxlength="30"
+              class="w-full h-10 outline-none border-black font-semibold border-b-2 bg-none sm:text-xl"
+              type="text"
+            />
+            <label
+              for="password"
+              class="absolute bg-none font-semibold -top-1 left-0 md:text-xl"
+              >Password</label
+            >
+          </div>
 
-                <button class="rounded-lg mt-5 bg-black py-3 text-white sm:text-xl shadow-sm shadow-black">Create account</button>
-                <!-------- or ----------->
+          <button
+            class="rounded-lg mt-5 bg-black py-3 text-white sm:text-xl shadow-sm shadow-black"
+          >
+            Create account
+          </button>
+          <!-------- or ----------->
 
-                <div class="flex flex-row items-center w-full mt-5">
-                    <hr class="bg-black w-2/5 h-0.5">
-                    <p class="font-semibold w-1/5 text-xl text-center">Or</p>
-                    <hr class="bg-black w-2/5 h-0.5">
-                </div>
+          <div class="flex flex-row items-center w-full mt-5">
+            <hr class="bg-black w-2/5 h-0.5" />
+            <p class="font-semibold w-1/5 text-xl text-center">Or</p>
+            <hr class="bg-black w-2/5 h-0.5" />
+          </div>
 
-                <button
-                    class="flex flex-row items-center justify-center  rounded-lg mt-5 bg-none border-black border py-3 text-black font-semibold sm:text-xl shadow-sm shadow-black">
-                    <svg class="w-8 h-8 mr-2" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 488 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path
-                            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
-                        </path>
-                    </svg>
-                    <span>Sign Up with Google</span>
-                </button>
+          <button
+            class="flex flex-row items-center justify-center rounded-lg mt-5 bg-none border-black border py-3 text-black font-semibold sm:text-xl shadow-sm shadow-black"
+          >
+            <svg
+              class="w-8 h-8 mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 488 512"
+            >
+              <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+              ></path>
+            </svg>
+            <span>Sign Up with Google</span>
+          </button>
 
-                <button
-                    class="flex flex-row items-center justify-center rounded-lg mt-5 bg-none border-black border py-3 text-black font-semibold sm:text-xl shadow-sm shadow-black">
-                    <svg class="w-8 h-8 mr-2" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path
-                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-                    </svg>
-                    <span>Sign up with Twitter</span>
-                </button>
-
-                <p class="text-center md:text-xl text-slate-800 mt-5 lg:mt-10">Already have an accound? <a class="font-semibold border-b-2 border-black"
-                        href="#">Login</a></p>
-
-            </form>
-        </div>
+          <button
+            class="flex flex-row items-center justify-center rounded-lg mt-5 bg-none border-black border py-3 text-black font-semibold sm:text-xl shadow-sm shadow-black"
+          >
+            <svg
+              class="w-8 h-8 mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              />
+            </svg>
+            <span>Sign up with Twitter</span>
+          </button>
+        </form>
+        <p class="text-center md:text-xl text-slate-800 mt-5 lg:mt-10">
+          Already have an accound?
+          <a class="font-semibold border-b-2 border-black" href="#">Login</a>
+        </p>
+      </div>
     </div>
 
     <!--------------- Partie avec les images ------------------->
 
-    <div class="hidden max-h-screen md:block lg:block  md:col-span-3">
-        <div class="h-full w-full relative before:h-full before:w-full before:bg-black before:opacity-30 before:absolute overflow-hidden">
-            <!----Logo----->
-            <img class="absolute left-10 top-10 " src="image/logo-white.PNG" alt="Grande image du logo">
+    <div class="hidden min-h-screen md:block lg:block md:col-span-3">
+      <div
+        class="h-full w-full relative before:h-full before:w-full before:bg-black before:opacity-30 before:absolute overflow-hidden"
+      >
+        <!----Logo----->
+        <img
+          class="absolute left-10 top-10"
+          src="image/logo-white.PNG"
+          alt="Grande image du logo"
+        />
 
-            <!--------Boutton pour le slider------->
-            <div class="flex flex-row items-center justify-center gap-5 absolute bottom-3 right-10">
-                <div class="fleche z-10 flex flex-row gap-5 items-center bg-transparent p-10 rounded-full">
-                    <div id="btn_left" class="cursor-pointer bg-none">
-                        <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="53" cy="53" r="51.5" stroke="white" stroke-width="3" />
-                            <path
-                                d="M38.9393 51.9393C38.3536 52.5251 38.3536 53.4749 38.9393 54.0607L48.4853 63.6066C49.0711 64.1924 50.0208 64.1924 50.6066 63.6066C51.1924 63.0208 51.1924 62.0711 50.6066 61.4853L42.1213 53L50.6066 44.5147C51.1924 43.9289 51.1924 42.9792 50.6066 42.3934C50.0208 41.8076 49.0711 41.8076 48.4853 42.3934L38.9393 51.9393ZM66 51.5H40V54.5H66V51.5Z"
-                                fill="white" />
-                        </svg>
-                    </div>
-                    <div id="btn_right" class="cursor-pointer">
-                        <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="53" cy="53" r="51.5" stroke="white" stroke-width="3"/>
-                            <path
-                                d="M38.9393 51.9393C38.3536 52.5251 38.3536 53.4749 38.9393 54.0607L48.4853 63.6066C49.0711 64.1924 50.0208 64.1924 50.6066 63.6066C51.1924 63.0208 51.1924 62.0711 50.6066 61.4853L42.1213 53L50.6066 44.5147C51.1924 43.9289 51.1924 42.9792 50.6066 42.3934C50.0208 41.8076 49.0711 41.8076 48.4853 42.3934L38.9393 51.9393ZM66 51.5H40V54.5H66V51.5Z"
-                                fill="white" />
-                            </svg>                            
-                    </div>
-                </div>
+        <!--------Boutton pour le slider------->
+        <div
+          class="flex flex-row items-center justify-center gap-5 absolute bottom-3 right-10"
+        >
+          <div
+            class="fleche z-10 flex flex-row gap-5 items-center bg-transparent p-10 rounded-full"
+          >
+            <div id="btn_left" class="cursor-pointer bg-none">
+              <svg
+                width="106"
+                height="106"
+                viewBox="0 0 106 106"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="53"
+                  cy="53"
+                  r="51.5"
+                  stroke="white"
+                  stroke-width="3"
+                />
+                <path
+                  d="M38.9393 51.9393C38.3536 52.5251 38.3536 53.4749 38.9393 54.0607L48.4853 63.6066C49.0711 64.1924 50.0208 64.1924 50.6066 63.6066C51.1924 63.0208 51.1924 62.0711 50.6066 61.4853L42.1213 53L50.6066 44.5147C51.1924 43.9289 51.1924 42.9792 50.6066 42.3934C50.0208 41.8076 49.0711 41.8076 48.4853 42.3934L38.9393 51.9393ZM66 51.5H40V54.5H66V51.5Z"
+                  fill="white"
+                />
+              </svg>
             </div>
-            <!--------- Slider------------->
-            <div class="h-full w-full">
-                <div class="card relative active">
-                    <div class="absolute left-10 bottom-10 ">
-                        <h2 class="text-white font-semibold text-xl my-4">
-                            <blockquote>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, odit. Architecto accusamus
-                                voluptate dolor iusto obcaecati ullam quis. Cupiditate corrupti porro quod inventore velit vero
-                                consectetur deleniti maxime! Dicta, maiores?
-                            </blockquote>
-                        </h2>
-                        <p class="text-white font-semibold text-lg my-1">Mbiamou Richy</p>
-                        <small class="text-white font-semibold text-md">Web integrator</small>
-                    </div>
-                    <img class="min-h-full h-full relative w-full object-cover -z-10" src="./image/4.jpg" alt="Image1">
-                </div>
-                <div class="card relative">
-                    <div class="absolute left-10 bottom-10 ">
-                        <h2 class="text-white font-semibold text-xl my-4">
-                            <blockquote>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, odit. Architecto accusamus
-                                voluptate dolor iusto obcaecati ullam quis. Cupiditate corrupti porro quod inventore velit vero
-                                consectetur deleniti maxime! Dicta, maiores?
-                            </blockquote>
-                        </h2>
-                        <p class="text-white font-semibold text-lg my-1">Mbiamou Richy</p>
-                        <small class="text-white font-semibold text-md">FrontEnd Developer</small>
-                    </div>
-                    <img class="h-full relative w-full object-cover -z-10" src="./image/3.jpg" alt="Image2">
-                </div>
+            <div id="btn_right" class="cursor-pointer">
+              <svg
+                width="106"
+                height="106"
+                viewBox="0 0 106 106"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="53"
+                  cy="53"
+                  r="51.5"
+                  stroke="white"
+                  stroke-width="3"
+                />
+                <path
+                  d="M38.9393 51.9393C38.3536 52.5251 38.3536 53.4749 38.9393 54.0607L48.4853 63.6066C49.0711 64.1924 50.0208 64.1924 50.6066 63.6066C51.1924 63.0208 51.1924 62.0711 50.6066 61.4853L42.1213 53L50.6066 44.5147C51.1924 43.9289 51.1924 42.9792 50.6066 42.3934C50.0208 41.8076 49.0711 41.8076 48.4853 42.3934L38.9393 51.9393ZM66 51.5H40V54.5H66V51.5Z"
+                  fill="white"
+                />
+              </svg>
             </div>
+          </div>
         </div>
+        <!--------- Slider------------->
+        <div class="h-full w-full">
+          <div class="card relative active">
+            <div class="absolute left-10 bottom-10">
+              <h2 class="text-white font-semibold text-xl my-4">
+                <blockquote>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
+                  odit. Architecto accusamus voluptate dolor iusto obcaecati
+                  ullam quis. Cupiditate corrupti porro quod inventore velit
+                  vero consectetur deleniti maxime! Dicta, maiores?
+                </blockquote>
+              </h2>
+              <p class="text-white font-semibold text-lg my-1">Mbiamou Richy</p>
+              <small class="text-white font-semibold text-md"
+                >Web integrator</small
+              >
+            </div>
+            <img
+              class="min-h-full h-full relative w-full object-cover -z-10"
+              src="./image/4.jpg"
+              alt="Image1"
+            />
+          </div>
+          <div class="card relative">
+            <div class="absolute left-10 bottom-10">
+              <h2 class="text-white font-semibold text-xl my-4">
+                <blockquote>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
+                  odit. Architecto accusamus voluptate dolor iusto obcaecati
+                  ullam quis. Cupiditate corrupti porro quod inventore velit
+                  vero consectetur deleniti maxime! Dicta, maiores?
+                </blockquote>
+              </h2>
+              <p class="text-white font-semibold text-lg my-1">Mbiamou Richy</p>
+              <small class="text-white font-semibold text-md"
+                >FrontEnd Developer</small
+              >
+            </div>
+            <img
+              class="h-full relative w-full object-cover -z-10"
+              src="./image/3.jpg"
+              alt="Image2"
+            />
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
